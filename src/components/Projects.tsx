@@ -10,16 +10,20 @@ const Projects: React.FC = () => {
     {
       title: 'FeexPay SDK JavaScript',
       description: 'Module de paiement intégré pour sites e-commerce avec API REST sécurisée',
-      tech: ['JavaScript', 'Node.js', 'Express', 'MongoDB'],
+      tech: ['JavaScript', 'CSS', 'HTML'],
       image: 'https://images.pexels.com/photos/4968383/pexels-photo-4968383.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'SDK / API'
+      category: 'SDK / API',
+      link: 'https://sdkjsonline.netlify.app/',
+      github: 'https://github.com/Abdias1998/sdkjs_online',
     },
     {
       title: 'Dashboard Agrégation Paiement',
       description: 'Interface d\'administration complète pour la gestion des transactions',
       tech: ['React', 'NestJS', 'MongoDB', 'Chart.js'],
       image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Web App'
+      category: 'Web App',
+      link: 'https://github.com/feexpay/feexpay-dashboard',
+      github: 'https://github.com/feexpay/feexpay-dashboard',
     },
     {
       title: 'App Achat de Tickets',
@@ -99,6 +103,7 @@ const Projects: React.FC = () => {
                     {/* Hover Actions */}
                     <div className="absolute inset-0 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <motion.button
+                        onClick={() => window.open(project.link, '_blank')}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
@@ -106,6 +111,7 @@ const Projects: React.FC = () => {
                         <ExternalLink size={20} />
                       </motion.button>
                       <motion.button
+                        onClick={() => window.open(project.github, '_blank')}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
