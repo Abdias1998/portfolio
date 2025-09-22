@@ -12,7 +12,7 @@ const About: React.FC = () => {
     { year: '2022', title: 'Expertise MERN Stack', description: 'Projets complexes avec MongoDB' },
     { year: '2023', title: 'Développement mobile', description: 'Expansion vers React Native' },
     { year: '2022', title: 'Architecture & Leadership', description: 'Lead developer sur des projets SaaS' },
-    { year: '2025', title: 'Expert Senior', description: '7+ ans, mentor et consultant' },
+    { year: '2025', title: 'Expert Senior', description: '6+ ans, mentor et consultant' },
   ];
 
   const stats = [
