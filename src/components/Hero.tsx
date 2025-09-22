@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1">
             <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
               <span className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                JD
+               A.A
               </span>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto"
         >
           Je transforme des idées en solutions digitales performantes avec
-          <span className="text-cyan-400"> 10+ années d'expérience</span>
+          <span className="text-cyan-400"> 6+ années d'expérience</span>
         </motion.p>
 
         <motion.div

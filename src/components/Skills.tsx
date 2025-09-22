@@ -29,7 +29,6 @@ const Skills: React.FC = () => {
     {
       title: 'Mobile & Cloud',
       skills: [
-        { name: 'Flutter', level: 85, color: 'from-blue-300 to-blue-500' },
         { name: 'React Native', level: 80, color: 'from-purple-400 to-purple-600' },
         { name: 'AWS', level: 88, color: 'from-orange-400 to-orange-600' },
         { name: 'PostgreSQL', level: 86, color: 'from-indigo-400 to-indigo-600' },

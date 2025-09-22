@@ -43,9 +43,9 @@ const Projects: React.FC = () => {
       category: 'SaaS'
     },
     {
-      title: 'App Mobile Flutter FeexPay',
+      title: 'App Mobile React Native FeexPay',
       description: 'Application mobile de test pour l\'intégration SDK FeexPay',
-      tech: ['Flutter', 'Dart', 'Firebase', 'REST API'],
+      tech: ['React Native', 'Firebase', 'REST API'],
       image: 'https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'Mobile',
       isMobile: true

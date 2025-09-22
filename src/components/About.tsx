@@ -7,12 +7,12 @@ const About: React.FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
   const timelineItems = [
-    { year: '2014', title: 'Début en développement web', description: 'Premiers projets PHP/MySQL' },
-    { year: '2016', title: 'Spécialisation JavaScript', description: 'Maîtrise de React et Node.js' },
-    { year: '2018', title: 'Expertise MERN Stack', description: 'Projets complexes avec MongoDB' },
-    { year: '2020', title: 'Développement mobile', description: 'Expansion vers React Native et Flutter' },
+    { year: '2020', title: 'Début en développement web', description: 'Premiers projets PHP/MySQL' },
+    { year: '2021', title: 'Spécialisation JavaScript', description: 'Maîtrise de React et Node.js' },
+    { year: '2022', title: 'Expertise MERN Stack', description: 'Projets complexes avec MongoDB' },
+    { year: '2023', title: 'Développement mobile', description: 'Expansion vers React Native' },
     { year: '2022', title: 'Architecture & Leadership', description: 'Lead developer sur des projets SaaS' },
-    { year: '2024', title: 'Expert Senior', description: '10+ ans, mentor et consultant' },
+    { year: '2025', title: 'Expert Senior', description: '7+ ans, mentor et consultant' },
   ];
 
   const stats = [
@@ -74,7 +74,7 @@ const About: React.FC = () => {
               innovantes et performantes. Spécialisé dans l'écosystème{' '}
               <span className="text-cyan-400 font-semibold">MERN Stack</span>, je maîtrise également
               les technologies modernes comme{' '}
-              <span className="text-purple-400 font-semibold">Next.js, NestJS, Flutter</span> et bien d'autres.
+              <span className="text-purple-400 font-semibold">Next.js, NestJS, React Native</span> et bien d'autres.
             </p>
           </motion.div>
 

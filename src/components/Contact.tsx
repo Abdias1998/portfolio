@@ -32,8 +32,8 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'contact@devportfolio.com', link: 'mailto:contact@devportfolio.com' },
-    { icon: Phone, label: 'Téléphone', value: '+33 1 23 45 67 89', link: 'tel:+33123456789' },
+    { icon: Mail, label: 'Email', value: 'adinsiabdias@gmail.com', link: 'mailto:adinsiabdias@gmail.com' },
+    { icon: Phone, label: 'Téléphone', value: '+229 01 67 91 91 50', link: 'tel:+229016719150' },
     { icon: MapPin, label: 'Localisation', value: 'Paris, France', link: null },
   ];
 
