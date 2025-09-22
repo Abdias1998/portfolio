@@ -8,13 +8,13 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: 'FeexPay SDK JavaScript',
+      title: 'FeexPay SDK React',
       description: 'Module de paiement intégré pour sites e-commerce avec API REST sécurisée',
-      tech: ['JavaScript', 'CSS', 'HTML'],
+      tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'TypeScript'],
       image: 'https://images.pexels.com/photos/4968383/pexels-photo-4968383.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'SDK / API',
       link: 'https://sdkjsonline.netlify.app/',
-      github: 'https://github.com/Abdias1998/sdkjs_online',
+      github: 'https://www.npmjs.com/package/@feexpay/react-sdk?activeTab=readme',
     },
     {
       title: 'Dashboard Agrégation Paiement',
@@ -22,15 +22,17 @@ const Projects: React.FC = () => {
       tech: ['React', 'NestJS', 'MongoDB', 'Chart.js'],
       image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'Web App',
-      link: 'https://github.com/feexpay/feexpay-dashboard',
-      github: 'https://github.com/feexpay/feexpay-dashboard',
+      link: 'https://eventappportfolio.netlify.app/',
+      github: 'https://github.com/Abdias1998/App-Integration-Payment-',
     },
     {
       title: 'App Achat de Tickets',
       description: 'Application de billetterie avec authentification et paiement sécurisé',
       tech: ['Next.js', 'Redux Toolkit', 'NextAuth', 'Stripe'],
       image: 'https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'E-commerce'
+      category: 'E-commerce',
+      link: 'https://integrationpaymentapp.netlify.app/',
+      github: 'https://github.com/Abdias1998/App-Integration-Payment-',
     },
     {
       title: 'Boulangerie Bread Source',
