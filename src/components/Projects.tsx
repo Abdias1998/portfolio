@@ -35,11 +35,13 @@ const Projects: React.FC = () => {
       github: 'https://github.com/Abdias1998/App-Integration-Payment-',
     },
     {
-      title: 'Boulangerie Bread Source',
-      description: 'Site e-commerce minimaliste avec système de commande en ligne',
-      tech: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-      image: 'https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'E-commerce'
+      title: 'Détection d’Objets Temps Réel',
+      description: 'Application web utilisant TensorFlow.js + COCO-SSD pour identifier en direct des personnes, objets ou animaux. Interface visuelle avec encadrement des éléments détectés.',
+      tech: ['JavaScript', 'TensorFlow.js', 'COCO-SSD', 'HTML / CSS'],
+      image: './public/object-detection-classification-ai-cameras-sensors-banner_1200x628.jpg',
+      category: 'Vision par Ordinateur / Intelligence Artificielle',
+      link: 'https://model-coco-ssd.netlify.app/',
+      github: 'https://github.com/Abdias1998/models-coco-ssd',
     },
     {
       title: 'Service d\'Entretien en Ligne',
