@@ -8,6 +8,15 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: 'Détection d’Objets Temps Réel',
+      description: 'Application web utilisant TensorFlow.js + COCO-SSD pour identifier en direct des personnes, objets ou animaux. Interface visuelle avec encadrement des éléments détectés.',
+      tech: ['JavaScript', 'TensorFlow.js', 'COCO-SSD', 'HTML / CSS'],
+      image: './public/object-detection-classification-ai-cameras-sensors-banner_1200x628.jpg',
+      category: 'Vision par Ordinateur / Intelligence Artificielle',
+      link: 'https://model-coco-ssd.netlify.app/',
+      github: 'https://github.com/Abdias1998/models-coco-ssd',
+    },  
+    {
       title: 'FeexPay SDK React',
       description: 'Module de paiement intégré pour sites e-commerce avec API REST sécurisée',
       tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'TypeScript'],
@@ -17,13 +26,13 @@ const Projects: React.FC = () => {
       github: 'https://www.npmjs.com/package/@feexpay/react-sdk?activeTab=readme',
     },
     {
-      title: 'Dashboard Agrégation Paiement',
-      description: 'Interface d\'administration complète pour la gestion des transactions',
-      tech: ['React', 'NestJS', 'MongoDB', 'Chart.js'],
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'App Notation des Professeurs',
+      description: 'Plateforme web permettant aux élèves d’évaluer leurs enseignants de manière anonyme et constructive, avec un tableau de bord pour visualiser les retours.',
+      tech: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+      image: 'https://images.pexels.com/photos/5905475/pexels-photo-5905475.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'Web App',
-      link: 'https://eventappportfolio.netlify.app/',
-      github: 'https://github.com/Abdias1998/App-Integration-Payment-',
+      link: 'https://profreview.netlify.app/',
+      github: 'https://github.com/Abdias1998/note_appStudient',
     },
     {
       title: 'App Achat de Tickets',
@@ -34,15 +43,7 @@ const Projects: React.FC = () => {
       link: 'https://integrationpaymentapp.netlify.app/',
       github: 'https://github.com/Abdias1998/App-Integration-Payment-',
     },
-    {
-      title: 'Détection d’Objets Temps Réel',
-      description: 'Application web utilisant TensorFlow.js + COCO-SSD pour identifier en direct des personnes, objets ou animaux. Interface visuelle avec encadrement des éléments détectés.',
-      tech: ['JavaScript', 'TensorFlow.js', 'COCO-SSD', 'HTML / CSS'],
-      image: './public/object-detection-classification-ai-cameras-sensors-banner_1200x628.jpg',
-      category: 'Vision par Ordinateur / Intelligence Artificielle',
-      link: 'https://model-coco-ssd.netlify.app/',
-      github: 'https://github.com/Abdias1998/models-coco-ssd',
-    },
+   
     {
       title: 'Service d\'Entretien en Ligne',
       description: 'Plateforme de gestion de réservations avec calendrier intégré',

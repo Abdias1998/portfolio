@@ -41,7 +41,6 @@ const Skills: React.FC = () => {
         { name: 'Machine Learning', level: 85, color: 'from-emerald-400 to-emerald-600' },
         { name: 'Deep Learning', level: 82, color: 'from-violet-400 to-violet-600' },
         { name: 'TensorFlow', level: 80, color: 'from-amber-400 to-amber-600' },
-        { name: 'PyTorch', level: 78, color: 'from-red-400 to-red-600' },
         { name: 'OpenAI API', level: 90, color: 'from-teal-400 to-teal-600' },
       ]
     }
