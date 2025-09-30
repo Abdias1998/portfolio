@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
       title: 'Détection d’Objets Temps Réel',
       description: 'Application web utilisant TensorFlow.js + COCO-SSD pour identifier en direct des personnes, objets ou animaux. Interface visuelle avec encadrement des éléments détectés.',
       tech: ['JavaScript', 'TensorFlow.js', 'COCO-SSD', 'HTML / CSS'],
-      image: './public/object-detection-classification-ai-cameras-sensors-banner_1200x628.jpg',
+      image: '/object-detection-classification-ai-cameras-sensors-banner_1200x628.jpg',
       category: 'Vision par Ordinateur / Intelligence Artificielle',
       link: 'https://model-coco-ssd.netlify.app/',
       github: 'https://github.com/Abdias1998/models-coco-ssd',
