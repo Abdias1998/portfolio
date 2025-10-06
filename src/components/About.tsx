@@ -12,14 +12,14 @@ const About: React.FC = () => {
     { year: '2022', title: 'Expertise MERN Stack', description: 'Projets complexes avec MongoDB' },
     { year: '2023', title: 'Développement mobile', description: 'Expansion vers React Native' },
     { year: '2022', title: 'Architecture & Leadership', description: 'Lead developer sur des projets SaaS' },
-    { year: '2025', title: 'Expert Senior', description: '6+ ans, mentor et consultant' },
+    { year: '2025', title: 'Expert Senior', description: '06+ ans, mentor et consultant' },
   ];
 
   const stats = [
     { icon: Code, label: 'Projets Complétés', value: '150+' },
     { icon: Users, label: 'Clients Satisfaits', value: '50+' },
     { icon: Zap, label: 'Technologies Maîtrisées', value: '20+' },
-    { icon: Award, label: 'Années d\'Expérience', value: '10+' },
+    { icon: Award, label: 'Années d\'Expérience', value: '06+' },
   ];
 
   return (

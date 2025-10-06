@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto"
         >
           Je transforme des idées en solutions digitales performantes avec
-          <span className="text-cyan-400"> 6+ années d'expérience</span>
+          <span className="text-cyan-400"> 06+ années d'expérience</span>
         </motion.p>
 
         <motion.div
@@ -66,14 +66,32 @@ const Hero: React.FC = () => {
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </motion.a>
 
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full border-2 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-colors"
-          >
-            Me Contacter
-          </motion.a>
+          <div className="flex gap-4">
+  {/* Bouton pour visualiser */}
+  <motion.a
+    href="/CV_ABDIAS_V9.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-4 rounded-full border-2 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-colors"
+  >
+    Voir Mon CV
+  </motion.a>
+
+  {/* Bouton pour télécharger */}
+  <motion.a
+    href="/CV_ABDIAS_V9.pdf"
+    download="CV_Adinsi_Abdias.pdf"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-4 rounded-full border-2 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-colors"
+  >
+    Télécharger Mon CV
+  </motion.a>
+</div>
+
+
         </motion.div>
       </div>
 

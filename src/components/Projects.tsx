@@ -21,9 +21,9 @@ const Projects: React.FC = () => {
       description: 'Module de paiement intégré pour sites e-commerce avec API REST sécurisée',
       tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'TypeScript'],
       image: 'https://images.pexels.com/photos/4968383/pexels-photo-4968383.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'SDK / API',
-      link: 'https://sdkjsonline.netlify.app/',
-      github: 'https://www.npmjs.com/package/@feexpay/react-sdk?activeTab=readme',
+      category: 'SDK / MODAL',
+      link: 'https://sdkreactjs.netlify.app/',
+      github: 'https://github.com/Abdias1998/feexpay-react-sdk',
     },
     {
       title: 'App Notation des Professeurs',
@@ -45,11 +45,13 @@ const Projects: React.FC = () => {
     },
    
     {
-      title: 'Service d\'Entretien en Ligne',
-      description: 'Plateforme de gestion de réservations avec calendrier intégré',
-      tech: ['Vue.js', 'Django', 'PostgreSQL', 'Redis'],
-      image: 'https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'SaaS'
+      title: "Plateforme de Gestion des Guides",
+      description: "Application SaaS avec tableau de bord professionnel pour administrer les guides, gérer leurs profils, suivre les réservations et consulter les statistiques en temps réel.",
+      tech: ["Vue.js", "Django", "PostgreSQL", "Redis"],
+      image: "/bootstrap-analytics-dashboard.png",
+      category: "SaaS / Dashboard",
+      link: "https://leguidebjadmin.netlify.app/admin/dashboard",
+      github: "https://github.com/Abdias1998/leguidebj_app/tree/main"
     },
     {
       title: 'App Mobile React Native FeexPay',
