@@ -65,32 +65,31 @@ const Hero: React.FC = () => {
             <span>Mes Projets</span>
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </motion.a>
-
-          <div className="flex gap-4">
-  {/* Bouton pour visualiser */}
-  <motion.a
-    href="/CV_ABDIAS_V9.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-8 py-4 rounded-full border-2 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-colors"
-  >
-    Voir Mon CV
-  </motion.a>
-
-  {/* Bouton pour télécharger */}
-  <motion.a
-    href="/CV_ABDIAS_V9.pdf"
+          <motion.a
+             href="/CV_ABDIAS_V9.pdf"
     download="CV_Adinsi_Abdias.pdf"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-8 py-4 rounded-full border-2 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 font-semibold transition-colors"
-  >
-    Télécharger Mon CV
-  </motion.a>
-</div>
+            whileHover={{ scale: 1.05, x: 5 }}
+            whileTap={{ scale: 0.95 }}
+            className="group bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-full text-white font-semibold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <span>Télécharger Mon CV</span>
+            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+          </motion.a>
+          <motion.a
+           href="/CV_ABDIAS_V9.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, x: 5 }}
+            whileTap={{ scale: 0.95 }}
+            className="group bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-full text-white font-semibold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <span>Voir Mon CV</span>
+            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+          </motion.a>
 
+
+
+   
 
         </motion.div>
       </div>
