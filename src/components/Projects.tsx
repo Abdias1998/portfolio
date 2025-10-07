@@ -35,32 +35,35 @@ const Projects: React.FC = () => {
       github: 'https://github.com/Abdias1998/note_appStudient',
     },
     {
-      title: 'App Achat de Tickets',
-      description: 'Application de billetterie avec authentification et paiement sécurisé',
-      tech: ['Next.js', 'Redux Toolkit', 'NextAuth', 'Stripe'],
-      image: 'https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'E-commerce',
-      link: 'https://integrationpaymentapp.netlify.app/',
-      github: 'https://github.com/Abdias1998/App-Integration-Payment-',
+      title: 'CineFlix',
+      description: 'Projet de démonstration pour apprendre à manipuler une API (TMDB).',
+      tech: ['React','Supabase','Tailwind CSS','TypeScript',"TMDB"],
+      image: 'https://images.pexels.com/photos/7991372/pexels-photo-7991372.jpeg?auto=compress&cs=tinysrgb&w=800', 
+      category: 'Projet Démo',
+      link: 'https://netfilmapi.netlify.app/',
+      github: 'https://github.com/Abdias1998/NetFilmApi',
     },
+    
    
     {
       title: "Plateforme de Gestion des Guides",
       description: "Application SaaS avec tableau de bord professionnel pour administrer les guides, gérer leurs profils, suivre les réservations et consulter les statistiques en temps réel.",
-      tech: ["Vue.js", "Django", "PostgreSQL", "Redis"],
+      tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'TypeScript'],
       image: "/bootstrap-analytics-dashboard.png",
       category: "SaaS / Dashboard",
       link: "https://leguidebjadmin.netlify.app/admin/dashboard",
       github: "https://github.com/Abdias1998/leguidebj_app/tree/main"
     },
     {
-      title: 'App Mobile React Native FeexPay',
-      description: 'Application mobile de test pour l\'intégration SDK FeexPay',
+      title: 'QuizKids',
+      description: 'Application mobile ludique et éducative pour enfants, développée avec React Native. Elle propose des quiz colorés et interactifs pour apprendre en s’amusant.',
       tech: ['React Native', 'Firebase', 'REST API'],
-      image: 'https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/8422208/pexels-photo-8422208.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'Mobile',
       isMobile: true
     }
+    
+    
   ];
 
   return (
