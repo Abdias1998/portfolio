@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Send, Mail, Phone, MapPin, Linkedin, Github, MessageSquare } from 'lucide-react';
-
+import emailjs from 'emailjs-com';
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
   const [formData, setFormData] = useState({
@@ -12,17 +12,33 @@ const Contact: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+
+
+  // ...
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simuler l'envoi
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({ name: '', email: '', message: '' });
+  
+    try {
+      const result = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+  
+      console.log('SUCCESS!', result.status, result.text);
       alert('Message envoyé avec succès !');
-    }, 2000);
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('FAILED...', error);
+      alert("Une erreur est survenue lors de l'envoi du message.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
