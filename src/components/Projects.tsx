@@ -125,18 +125,21 @@ const Projects: React.FC = () => {
                       >
                         <ExternalLink size={20} />
                       </motion.button> */}
-                      <motion.button
+                     <motion.button
   onClick={() => {
     if (project.video) {
-      setSelectedVideo(project.video);
+      window.open(project.video, '_blank'); // ouvre la vidéo dans un nouvel onglet
     } else {
-      window.open(project.link, '_blank');
+      window.open(project.link, '_blank'); // lien normal pour les autres projets
     }
   }}
-  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+  className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
 >
   <ExternalLink size={20} />
 </motion.button>
+
 
                       <motion.button
                         onClick={() => window.open(project.github, '_blank')}
