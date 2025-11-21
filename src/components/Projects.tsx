@@ -133,7 +133,7 @@ const Projects: React.FC = () => {
       window.open(project.link, '_blank');
     }
   }}
-   <ExternalLink size={20} />
+  
 >
   <ExternalLink size={20} />
 </motion.button>
