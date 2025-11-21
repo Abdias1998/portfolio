@@ -5,6 +5,8 @@ import { ExternalLink, Github, Smartphone } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
+  const [selectedVideo, setSelectedVideo] = React.useState<string | null>(null);
+
 
   const projects = [
     {
@@ -54,14 +56,17 @@ const Projects: React.FC = () => {
       link: "https://leguidebjadmin.netlify.app/admin/dashboard",
       github: "https://github.com/Abdias1998/leguidebj_app/tree/main"
     },
-    {
-      title: 'QuizKids',
-      description: 'Application mobile ludique et éducative pour enfants, développée avec React Native. Elle propose des quiz colorés et interactifs pour apprendre en s’amusant.',
-      tech: ['React Native', 'Firebase', 'REST API'],
-      image: 'https://images.pexels.com/photos/8422208/pexels-photo-8422208.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Mobile',
-      isMobile: true
-    }
+{
+  title: 'Application Station-Service',
+  description: 'Application mobile permettant de localiser les stations proches, recharger le compte via FeexPay, payer le carburant, réserver et consulter des diagnostics.',
+  tech: ['React Native', 'Node.js', 'Express', 'MongoDB', 'FeexPay API'],
+  image: '/station-app.jpg', // Mets ton image ici
+  category: 'Mobile / Paiement',
+  isMobile: true,
+  video: '/videos/station-demo.mp4' // Ta vidéo de démonstration
+}
+
+
     
     
   ];
@@ -112,14 +117,27 @@ const Projects: React.FC = () => {
 
                     {/* Hover Actions */}
                     <div className="absolute inset-0 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <motion.button
+                      {/* <motion.button
                         onClick={() => window.open(project.link, '_blank')}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
                       >
                         <ExternalLink size={20} />
-                      </motion.button>
+                      </motion.button> */}
+                      <motion.button
+  onClick={() => {
+    if (project.video) {
+      setSelectedVideo(project.video);
+    } else {
+      window.open(project.link, '_blank');
+    }
+  }}
+   <ExternalLink size={20} />
+>
+  <ExternalLink size={20} />
+</motion.button>
+
                       <motion.button
                         onClick={() => window.open(project.github, '_blank')}
                         whileHover={{ scale: 1.1 }}
@@ -128,6 +146,7 @@ const Projects: React.FC = () => {
                       >
                         <Github size={20} />
                       </motion.button>
+                      
                     </div>
                   </div>
 
@@ -158,6 +177,25 @@ const Projects: React.FC = () => {
           </div>
         </motion.div>
       </div>
+      {selectedVideo && (
+  <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+    <div className="bg-black rounded-xl p-4 max-w-2xl w-full">
+      <video
+        src={selectedVideo}
+        controls
+        autoPlay
+        className="w-full rounded-lg"
+      />
+      <button
+        className="mt-4 text-white px-4 py-2 bg-red-600 rounded-lg"
+        onClick={() => setSelectedVideo(null)}
+      >
+        Fermer
+      </button>
+    </div>
+  </div>
+)}
+
     </section>
   );
 };
