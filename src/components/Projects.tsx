@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
   title: 'Application Station-Service',
   description: 'Application mobile permettant de localiser les stations proches, recharger le compte via FeexPay, payer le carburant, réserver et consulter des diagnostics.',
   tech: ['React Native', 'Node.js', 'Express', 'MongoDB', 'FeexPay API'],
-  image: '/station-app.jpg', // Mets ton image ici
+  image: 'https://images.pexels.com/photos/34631204/pexels-photo-34631204.jpeg?auto=compress&cs=tinysrgb&w=800', // Mets ton image ici
   category: 'Mobile / Paiement',
   isMobile: true,
   video: '/videos/station-demo.mp4' // Ta vidéo de démonstration
